@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación de escritorio que permite a los usuarios seleccionar imágenes y convertirlas al formato WebP. La aplicación utiliza la biblioteca tkinter para la interfaz de usuario y Pillow (PIL) para la conversión de imágenes.
 
-![Vista previa de la aplicación](background.png)
+![Vista previa de la aplicación](./converted/webp/background.webp)
 
 ## Características Clave
 
