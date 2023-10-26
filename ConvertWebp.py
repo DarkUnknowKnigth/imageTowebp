@@ -1,6 +1,7 @@
 from PIL import Image
 import os
 import subprocess
+import platform
 class ConvertWebp:
   inputhPath = ''
   outputhBase = './converted/webp'
@@ -23,6 +24,9 @@ class ConvertWebp:
         filename, ext = os.path.splitext(os.path.basename(self.inputhPath))
         self.outputPath = self.outputhBase+'/'+filename+".webp"
         img.save(self.outputPath, 'webp')
-        subprocess.Popen(['explorer', self.output_dir], shell=True)
+        if platform.system() == "Windows":
+          subprocess.Popen(['explorer', os.path.abspath(self.outputPath)], shell=True)
+        else:
+          subprocess.Popen(['xdg-open', os.path.abspath(self.outputPath)])
     except Exception as e:
       print(f"Error al convertir la imagen: {str(e)}")
