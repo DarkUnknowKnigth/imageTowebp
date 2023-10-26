@@ -42,3 +42,6 @@ Este proyecto fue desarrollado por [Daniel Morales] y está disponible bajo la l
 ¡Esperamos que disfrutes utilizando esta aplicación para convertir tus imágenes al formato WebP!
 
 [repositorio en GitHub]: https://github.com/DarkUnknowKnigth/imageTowebp
+
+### Agredecimientos
+ChatGpt gracias por tanto <3
