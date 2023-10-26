@@ -51,8 +51,8 @@ class ImageToWeb:
         converter.convert()
         self.progressLabel.config(text=f"Progreso {i} de {total} imágenes")
     conversionTrd = threading.Thread(target=conversionThread)
-    conversionTrd.start()
     messagebox.showinfo("Conversion Iniciada", "Las imágenes serán convertidas a webp")
+    conversionTrd.start()
 if __name__ == "__main__":
   root = tk.Tk()
   app = ImageToWeb(root)

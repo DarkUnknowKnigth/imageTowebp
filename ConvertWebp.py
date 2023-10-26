@@ -1,5 +1,6 @@
 from PIL import Image
 import os
+import subprocess
 class ConvertWebp:
   inputhPath = ''
   outputhBase = './converted/webp'
@@ -22,5 +23,6 @@ class ConvertWebp:
         filename, ext = os.path.splitext(os.path.basename(self.inputhPath))
         self.outputPath = self.outputhBase+'/'+filename+".webp"
         img.save(self.outputPath, 'webp')
+        subprocess.Popen(['explorer', self.output_dir], shell=True)
     except Exception as e:
       print(f"Error al convertir la imagen: {str(e)}")
